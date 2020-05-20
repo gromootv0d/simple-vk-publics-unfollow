@@ -12,7 +12,7 @@ api = vk.API(session=session, v=v, scope='wall')
 wall = api.groups.get()
 print(wall['items'])
 for i in wall['items']:
-    api.groups.leave(group_id=168074096)
+    api.groups.leave(group_id=i)
     time.sleep(0.3)
 
  
